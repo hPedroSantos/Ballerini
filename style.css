@@ -1,0 +1,187 @@
+/* GLOBAL =============================================================>*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 90%;
+}
+
+:root {
+    --color-left: 350;
+    --color-rigth: 11; /* Configuração de cor */
+}
+
+
+body {
+  background: linear-gradient(
+    68.15deg,
+    hsl(var(--color-left), 15%, 16%) 16.62%,
+    hsl(var(--color-rigth), 27%, 44%) 85.61%
+  );
+}
+
+/*
+font-family: 'Righteous', cursive;
+font-family: 'Sarala', sans-serif;
+/*
+
+/* HEADER =============================================================>*/
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+
+  border-bottom: 0.4px solid hsl(27, 100%, 95%);
+}
+
+header .cabecalho-img {
+  height: 3.87rem;
+}
+
+header .cabecalho-menu {
+  display: flex;
+  gap: 3.2rem;
+}
+
+header .cabecalho-menu .opcao-menu:hover {
+    text-transform: uppercase;
+    color: white;
+    transform: translateY(30%);
+    transition: 300ms;
+}
+
+header .cabecalho-menu .opcao-menu {
+  font-family: "Sarala", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.84rem;
+
+  color: hsl(27, 100%, 95%);
+}
+
+/* MAIN=============================================================>*/
+main {
+  display: grid;
+  grid-template-areas:
+    "A B"
+    "C C";
+
+  /*border-top: 0.4px solid hsl(27, 100%, 95%);*/
+}
+
+/* MAIN CONTEUDO A=============================================================>*/
+main .conteudo-a-b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+main .conteudo-a {
+  grid-area: A;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-left: 12.5rem;
+  margin-top: 4.7rem;
+}
+
+main section .conteudo-a h1 {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.95rem;
+
+  color: hsl(27, 100%, 95%);
+}
+
+main section .conteudo-a h4 {
+  font-family: "Sarala";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+
+  color: hsl(27, 51%, 85%);
+}
+
+main section .conteudo-a button {
+  box-shadow: 0.25rem 0.33rem 0.25rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 1.25rem;
+
+  width: 11.56rem;
+  height: 4.2rem;
+
+  background: hsl(27, 51%, 85%);
+
+  font-family: "Sarala";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.44rem;
+}
+
+main section .conteudo-a button:hover {
+  background-color: rgba(236, 214, 196, 0.53);
+  transition: 200ms;
+}
+
+/* MAIN CONTEUDO B=============================================================>*/
+main .conteudo-b {
+  grid-area: B;
+  align-items: right;
+
+  width: 24.64rem;
+  height: 26.83rem;
+}
+
+/* MAIN CONTEUDO C=============================================================>*/
+main .conteudo-c {
+  grid-area: C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .conteudo-c .conteudo-titulo {
+  border-top: 0.4px solid rgba(255, 242, 231, 1);
+  padding-top: 3rem;
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.87rem;
+  text-align: center;
+
+  color: hsl(27, 100%, 95%);
+}
+
+main .conteudo-c .conteudo-services p {
+  margin-top: 1.94rem;
+
+  font-family: "Sarala";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.13rem;
+  line-height: 1.88rem;
+  text-align: center;
+
+  color: hsl(27, 51%, 85%);
+}
+
+/* FOOTER=============================================================>*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 40px;
+  border-top: 0.4px solid rgba(255, 242, 231, 1);
+}
